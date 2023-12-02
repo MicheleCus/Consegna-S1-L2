@@ -1,31 +1,63 @@
 1.1.1.1/8
-1 per network 3 per gli host
-
+Ip in classe A
+11111111.00000000.00000000.00000000
+Il primo ottetto è riservato alla network, gli altri 3 agli host, ottima soluzione in caso di un elevato numero di host.
 IP-NETWORK: 1.0.0.0/8
 IP-BROADCAST: 1.255.255.255/8
 IP-GATEWAY: 1.0.0.1/8
-IP-HOST:1.0-254.0-254.0-254
+IP-HOST:1.0.0.2/8-1.255.255.254/8
 
 
 128.1.6.5/12
+Ip in classe B
 11111111.11110000.00000000.00000000
-primi 12 per network e rimanenti per host
-128.0.0.0/12
-128.15.255.255
-128.0.0.1/12
-
+Il primo ottetto è riservato alla network, gli altri 3 agli host, ottima soluzione in caso di un elevato numero di host.
+IP-NETWORK: 128.0.0.0/12
+IP-BROADCAST: 128.15.255.255/8
+IP-GATEWAY: 128.0.0.1/8
+IP-HOST:128.0.0.2/8 - 128.15.255.254/8
 
 200.1.2.3/24 
+Ip in classe C
 11111111.11111111.11111111.00000000
+I primi 3 ottetti sono riservati alla network, ottima soluzione in caso di un numero contenuto di host.
+IP-NETWORK: 200.1.2.0/24
+IP-BROADCAST: 200.1.2.255/24
+IP-GATEWAY: 200.1.2.1/24
+IP-HOST:200.1.2.2/24 - 200.1.2.254/24
 
 192.192.1.1/22 
+Ip in classe C
 11111111.11111111.11111100.00000000
+I primi 2 ottetti sono riservati alla network, gli altri 2 agli host, ottima soluzione in caso di un numero medio di host.
+IP-NETWORK: 192.192.0.0/22
+IP-BROADCAST: 192.192.3.255/22
+IP-GATEWAY: 192.192.0.1/22
+IP-HOST:192.192.0.2/22 - 192.192.3.254/22
 
 126.5.4.3/9
+Ip in classe A
 11111111.10000000.00000000.00000000
+I primi 2 ottetti sono riservati alla network, gli altri 2 agli host, ottima soluzione in caso di un numero medio di host.
+IP-NETWORK: 126.0.0.0/9
+IP-BROADCAST: 126.127.255.255/9
+IP-GATEWAY: 126.0.0.1/9
+IP-HOST: 126.0.0.2/9 - 126.127.255.254/9
 
 200.1.9.8/24
+Ip in classe C
 11111111.11111111.11111111.00000000
+I primi 3 ottetti sono riservati alla network, ottima soluzione in caso di un numero contenuto di host.
+IP-NETWORK: 200.1.9.0/24
+IP-BROADCAST: 200.1.9.255/24
+IP-GATEWAY: 200.1.9.1/24
+IP-HOST:200.1.9.2/24 - 200.1.9.254/24
 
 172.16.0.4/16
+Ip in classe B
 111111111.11111111.00000000.00000000
+I primi 2 ottetti sono riservati alla network, gli altri 2 agli host, ottima soluzione in caso di un numero medio di host.
+IP-NETWORK: 172.16.0.0/24
+IP-BROADCAST: 172.16.255.255/24
+IP-GATEWAY: 172.16.0.1
+IP-HOST:172.16.0.2/16 - 172.16.255.254/16
